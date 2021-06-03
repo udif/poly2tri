@@ -18,6 +18,7 @@ add_library(poly2tri SHARED ${SOURCE_CC})
 target_link_libraries(poly2tri
     m)
 
+set_target_properties(poly2tri PROPERTIES SOVERSION 1)
 target_include_directories(poly2tri PUBLIC
     ${PROJECT_SOURCE_DIR}/poly2tri/common
     ${PROJECT_SOURCE_DIR}/poly2tri/sweep
